@@ -1,0 +1,7 @@
+<?jelly escape-by-default='true'?>
+<!--
+  This view is used to render the installed plugins page.
+-->
+<div>
+  This plugin provides a SCM filter trait to filter only branches with names when PRs / change requests are enabled too.
+</div>
