@@ -80,7 +80,7 @@ public class BranchNameFilterTrait extends BaseFilterTrait {
 
     @Override
     public boolean includeCategory(@NonNull SCMHeadCategory category) {
-        return category.isUncategorized();
+        return !category.isUncategorized();
     }
 
     @Extension

@@ -23,9 +23,7 @@
  */
 package org.jenkinsci.plugins.scmbranchnamefiltertrait;
 
-import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.util.FormValidation;
-import jenkins.scm.api.SCMHeadCategory;
 import jenkins.scm.api.SCMSource;
 import jenkins.scm.api.trait.SCMHeadFilter;
 import jenkins.scm.api.trait.SCMSourceContext;
@@ -79,14 +77,6 @@ public abstract class BaseFilterTrait extends SCMSourceTrait {
     }
 
     protected abstract SCMHeadFilter getScmHeadFilter();
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public boolean includeCategory(@NonNull SCMHeadCategory category) {
-        return category.isUncategorized();
-    }
 
     public static abstract class BaseDescriptorImpl extends SCMSourceTraitDescriptor {
 
